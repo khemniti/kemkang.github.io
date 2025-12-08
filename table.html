@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset = "utf-8">
-    <title>ตารางการแข่งขัน</title>
+    <title>ประวัติ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -38,6 +38,35 @@
           padding: 30px;
           text-align:center;
           border-radius: 10px;}
+
+      section{background: linear-gradient(darkviolet,blue);
+          padding: 15px;
+          margin: 20px auto;
+          width: 70%;
+          border-radius: 10px;}
+
+      p{text-indent: 2em;}
+
+      .zoom:hover{transform: scale(1.5); cursor:pointer;}
+
+      img:hover { animation: glowcolor 1.2s infinite alternate; }
+
+      @keyframes glowcolor{
+        0% {box-shadow: 0 0 20px hotpink;}
+        25% {box-shadow: 0 0 20px skyblue;}
+        50% {box-shadow: 0 0 20px gold;}
+        75% {box-shadow: 0 0 20px darkviolet;}
+        100% {box-shadow: 0 0 20px red;}
+      }
+
+      .blink-bg{
+        animation: blinkbg 1s infinite alternate;
+        padding: 3px 6px;
+      }
+      @keyframes blinkbg{
+        0%{background: cyan;}
+        100%{background: pink;}
+      }
       
     </style>
   </head>
@@ -68,5 +97,12 @@
       💗 ประเพณีชาวจตุรมิตร <br><br>
       😎 ผู้จัดทำ <br><br>
     </div>
+    <section>
+      <center>
+        <h1><mark>ตารางการแข่งขัน</mark></h1>
+      </center>
+      <br><br>
+      <p><span class = "blink-bg">การแข่งขันฟุตบอลประเพณีจตุรมิตรสามัคคีมีขึ้นในปี พ.ศ. 2507 เป็นปีแรก โดยลำดับการแข่งขันและการเป็นเจ้าภาพ ดังนี้</span></p>
+    </section>
   </body>
 </html>
